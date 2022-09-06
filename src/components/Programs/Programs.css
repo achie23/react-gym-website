@@ -1,0 +1,73 @@
+.Programs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+.programs-header {
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-style: italic;
+}
+.program-categories {
+    display: flex;
+    gap: 1rem;
+}
+.category {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--caloryCard);
+    padding: 2rem;
+    gap: 1rem;
+    color: var(--white);
+    justify-content: space-between;
+}
+.category>:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    fill: #ffffff;
+}
+.category>:nth-child(2) {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.category>:nth-child(3) {
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+.category:hover {
+    background: var(--planCard);
+    cursor: pointer;
+}
+.join-now {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.join-now>a>img {
+    width: 1rem;
+}
+
+/* mobile view */
+@media screen and (max-width: 768px) {
+    .Programs {
+        gap: 1rem;
+        /* padding-top: 2rem; */
+    }
+    .programs-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: xx-large;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .program-categories {
+        flex-direction: column;
+    }
+}

@@ -1,25 +1,25 @@
 import image1 from "../assets/t-image1.png";
-import image2 from "../assets/t-image2.jpg";
+import image2 from "../assets/t-image2.JPG";
 import image3 from "../assets/t-image3.jpg";
 
 export const testimonialsData = [
   {
     image: image1,
     review:
-      "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
-    name: 'MATHEW HENDRICKSON',
-    status : 'ENTREPRENEUR'
+      "Cobbies Fitclub has great programs and plans to help you achieve your ideal body!",
+    name: 'BRIAN',
+    status : 'MANAGER'
   },
   {
     image: image2,
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ',
-    name: 'JOHN KEVIN',
-    status: 'COACH'
+    review: 'Working with Cobbies Fitclub has been amazing and fulfilling. I get to help people achieve their body goals.',
+    name: 'NANA COBBY',
+    status: 'TRAINER'
   },
   {
     image : image3,
-    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
-    name: 'FRANKLIN',
-    status: "CUSTOMER"
+    review:'I made the right choice by choosing Cobbies Fitclub, and by choosing the right plan and program I have achieved my ideal body!',
+    name: 'COBBY',
+    status: "MEMBER"
   }
 ];

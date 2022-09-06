@@ -1,0 +1,113 @@
+.testimonials-container {
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.testimonials-left {
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.testimonials-left>:nth-child(1) {
+    color: var(--orange);
+    font-weight: bold;
+}
+.testimonials-left>:nth-child(2),
+.testimonials-left>:nth-child(3) {
+    font-weight: bold;
+    font-size: 3rem;
+}
+.testimonials-left>:nth-child(4) {
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.testimonials-right {
+    flex: 1;
+    position: relative;
+}
+.testimonials-right>img {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.testimonials-right>:nth-child(1) {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid var(--orange);
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.testimonials-right>:nth-child(2) {
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem;
+    top: 4rem;
+    background: var(--planCard);
+}
+.arrows {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+.arrows>img {
+    width: 1.5rem;
+    cursor: pointer;
+    filter: invert(65%) sepia(95%) saturate(459%) hue-rotate(305deg) brightness(100%) contrast(81%);
+}
+
+/* mobile view */
+@media screen and (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+    }
+    .testimonials-left {
+        gap: 1rem;
+    }
+    .testimonials-left>:nth-child(2),
+    .testimonials-left>:nth-child(3) {
+        font-size: xx-large;
+    }
+    .testimonials-left>:nth-child(4) {
+        font-size: small;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+    .testimonials-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .testimonials-right>div {
+        position: relative;
+        display: none;
+    }
+    .testimonials-right>img {
+        position: relative;
+        top: 0;
+        right: 0;
+        align-self: center;
+    }
+    .testimonials-right>.arrows {
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+    .testimonials-right>.arrows>img {
+        padding: 0 0.5rem;
+    }
+}
